@@ -13,7 +13,7 @@ const App = () => {
     fetchBooksData();
   }, []);
 
-  const fetchBooksData = async (searchQuery) => {
+  const fetchBooksData = async (searchQuery = "ramayan") => {
     try {
       const response = await axios.get(
         `https://www.googleapis.com/books/v1/volumes?q=${encodeURIComponent(searchQuery)}`
