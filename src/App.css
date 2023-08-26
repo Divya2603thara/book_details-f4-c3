@@ -1,0 +1,33 @@
+/* Add this to your App.css file */
+.book-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected-book-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px; /* Add some space between the selected book and more books */
+}
+
+/* Add this if you want to hide the top 3 books when a book is selected */
+.hidden {
+  display: none;
+}
+
+
+/* ... (previous CSS code) */
+
+.more-books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.more-book-card {
+  flex-basis: calc(16.66% - 10px); /* Each book card occupies around 16.66% width with some spacing */
+  margin-bottom: 20px; /* Add spacing between the rows */
+}
+
+/* ... (previous CSS code) */
