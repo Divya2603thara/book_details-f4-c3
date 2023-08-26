@@ -3,7 +3,6 @@ import axios from 'axios';
 import BookDetails from './BookDetails'; // Import the BookDetails component
 import Navbar from './Navbar'; // Import the Navbar component
 import './App.css'; // Import the CSS file
-
 const App = () => {
   const [books, setBooks] = useState([]);
   const [selectedBook, setSelectedBook] = useState(null);
